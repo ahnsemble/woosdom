@@ -1,0 +1,47 @@
+name: Redact and Publish
+on:
+  push:
+    branches: ["main"]
+
+jobs:
+  build_deploy:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      deployments: write
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Setup Python environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install dependencies (YAML parser)
+        run: pip install pyyaml
+
+      - name: Run Redact Python Engine
+        run: |
+          mkdir -p staging
+          python scripts/redact.py --input src/content/ --output staging/ --allow scripts/allow_list.yaml
+          rm -rf src/content/* && cp -r staging/* src/content/
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install NPM Deps
+        run: npm ci
+
+      - name: Build Web Application
+        run: npm run build
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/pages-action@v1
+        with:
+          apiToken: ${{ secrets.CF_API_TOKEN }}
+          accountId: ${{ secrets.CF_ACCOUNT_ID }}
+          projectName: 'woosdom'
+          directory: 'dist'

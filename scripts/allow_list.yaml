@@ -1,0 +1,11 @@
+# Redact allow-list: matches here are preserved (NOT redacted)
+# Brand / product names (public portfolio — OK to expose)
+brands:
+  - Blocs
+  - Pareto
+  - Woosdom
+  - Trinity
+
+# Script files (redact.py must not be redacted if accidentally processed)
+files:
+  - redact.py
