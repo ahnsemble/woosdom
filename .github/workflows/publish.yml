@@ -44,4 +44,4 @@ jobs:
           apiToken: ${{ secrets.CF_API_TOKEN }}
           accountId: ${{ secrets.CF_ACCOUNT_ID }}
           projectName: 'woosdom'
-          directory: 'dist'
+          directory: 'dist/client'
