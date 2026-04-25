@@ -67,7 +67,7 @@ graph TD
 
 ### Case B: AEC SaaS MVP 구축 및 배포 (Blocs)
 React, FastAPI, Cloudflare 인프라를 바탕으로 한국 건축법 법규조회 자동화 봇을 4개 엔진의 협업으로 구축했습니다. 수백 건의 테스트 망(pytest, vitest, e2e)을 통해 P0 버그를 사전에 차단하고, 무결점으로 브랜드 이전을 수행하며 배포 파이프라인을 구축한 사례입니다.
-* [→ 블로그 포스트 읽기]([BLOG_URL_B])
+* [→ 블로그 포스트 읽기](https://ahnsemble.com/blog/aec-saas-mvp-with-4-engine-ai/)
 
 ### Case C: 자체 인프라 보안 감사 (MCP 취약점 대응)
 전 세계 1억 5천만 회 이상의 다운로드가 일어난 MCP STDIO 원격 코드 실행 취약점(RCE)이 공개되었을 때, 48시간 이내에 자체 시스템 노출 감사 및 완화 조치(DR 서베이 + Brain의 교차 검증)를 수행했습니다. 시스템의 안전성을 자체적으로 지켜낸 방어 사례입니다.
