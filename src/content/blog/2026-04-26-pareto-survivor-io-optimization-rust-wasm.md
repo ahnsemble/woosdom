@@ -2,7 +2,7 @@
 title: "지오툴 30분 계산을 수초로 — Rust + WASM + Web Worker로 Survivor.io 빌드 최적화 SaaS 만들기"
 slug: "pareto-survivor-io-optimization-rust-wasm"
 description: "기존 단일 스레드 JS 기반 사이트들을 능가하기 위한 Rust + Web Worker 및 가지치기 알고리즘의 도입기."
-pubDate: "2026-04-26"
+pubDate: "2026-04-25"
 tags: ["rust", "wasm", "game-optimization", "fde", "saas"]
 draft: false
 ---

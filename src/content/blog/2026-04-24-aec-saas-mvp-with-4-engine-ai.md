@@ -2,7 +2,7 @@
 title: "한 명의 건축가가 4개의 AI 엔진으로 법규조회 SaaS를 배포하기까지"
 slug: "aec-saas-mvp-with-4-engine-ai"
 description: "건축사사무소 실무의 병목인 단위세대 조합 및 법규 검토를 해결하기 위해, Claude 기반 4엔진 AI 오케스트레이션을 활용하여 Blocs MVP를 배포한 과정과 교훈."
-pubDate: "2026-04-24"
+pubDate: "2026-04-21"
 tags: ["AI Orchestration", "SaaS", "Architecture", "Blocs"]
 draft: false
 ---

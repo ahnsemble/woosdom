@@ -2,7 +2,7 @@
 title: "4엔진 AI 오케스트레이션으로 개인 운영체제 만들기 (feat. Woosdom Brain)"
 slug: "woosdom-brain-4-engine-ai-orchestration"
 description: "개인이 설계, 연산, 코드 실행, 검색을 담당하는 4엔진 기반의 AI 오케스트레이션을 100일간 운용한 실제 구축기."
-pubDate: "2026-04-26"
+pubDate: "2026-04-23"
 tags: ["ai-orchestration", "aec", "fde", "neo4j", "obsidian"]
 draft: false
 ---
